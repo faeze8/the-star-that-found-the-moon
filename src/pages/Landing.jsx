@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import Fog from "../components/Fog";
 import StarField from "../components/StarField";
 import { motion } from "framer-motion";
 import "../styles/landing.css";
 
 export default function Landing() {
+  const navigate = useNavigate();
+
   return (
     <div className="landing">
       <StarField />
@@ -16,14 +19,15 @@ export default function Landing() {
         Fatemeh
       </motion.h2>
 
-     <button
-  className="enter-button"
-  onClick={() => window.location.href = "/galaxy"}
->
-  Enter The Observatory
-</button>
-<StarField />
-<Fog />
+      <button
+        className="enter-button"
+        onClick={() => navigate("/galaxy")}
+      >
+        Enter The Observatory
+      </button>
+
+      <StarField />
+      <Fog />
     </div>
   );
 }
