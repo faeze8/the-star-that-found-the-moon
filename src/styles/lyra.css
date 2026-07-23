@@ -1,0 +1,329 @@
+.lyra-page{
+
+  min-height:100vh;
+
+  padding:80px 25px;
+
+  overflow:hidden;
+
+  color:white;
+
+  position:relative;
+
+  background:
+  radial-gradient(
+    circle at center,
+    #1b1534,
+    #0b0a18,
+    #030305
+  );
+
+}
+
+/* Hero */
+
+.lyra-hero{
+
+  text-align:center;
+
+}
+
+.lyra-icon{
+
+  font-size:3rem;
+
+}
+
+.lyra-hero h1{
+
+  font-size:6rem;
+
+  margin:15px 0;
+
+  color:#f5d0fe;
+
+  text-shadow:
+  0 0 20px #c084fc,
+  0 0 50px #a855f7;
+
+}
+
+.lyra-hero h2{
+
+  color:#f9a8d4;
+
+}
+
+/* Music Card */
+
+.music-card{
+
+  max-width:800px;
+
+  margin:60px auto;
+
+  padding:35px;
+
+  border-radius:30px;
+
+  background:
+  rgba(255,255,255,.05);
+
+  backdrop-filter:blur(10px);
+
+}
+
+.music-card h3{
+
+  color:#f9a8d4;
+
+}
+
+/* Crystal Area */
+
+.crystal-area{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:40px;
+
+  margin:70px 0;
+
+}
+
+.crystal{
+
+  font-size:3rem;
+
+  animation:
+  floatCrystal 3s ease-in-out infinite;
+
+}
+
+.crystal:nth-child(2){
+
+  animation-delay:.5s;
+
+}
+
+.crystal:nth-child(3){
+
+  animation-delay:1s;
+
+}
+
+@keyframes floatCrystal{
+
+  50%{
+
+    transform:
+    translateY(-12px);
+
+  }
+
+}
+
+/* Stars */
+
+.lyra-stars{
+
+  max-width:1000px;
+
+  margin:auto;
+
+}
+
+.lyra-stars h3{
+
+  text-align:center;
+
+  margin-bottom:30px;
+
+}
+
+.star-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(220px,1fr));
+
+  gap:25px;
+
+}
+
+.star-card{
+
+  text-align:center;
+
+  padding:30px;
+
+  border-radius:25px;
+
+  background:
+  rgba(255,255,255,.04);
+
+  transition:.3s;
+
+}
+
+.star-card:hover{
+
+  transform:
+  translateY(-10px);
+
+  box-shadow:
+  0 0 30px rgba(
+    192,132,252,.3
+  );
+
+}
+
+.star-symbol{
+
+  font-size:2rem;
+
+  color:#f9a8d4;
+
+}
+
+/* Portal */
+
+.portal-box{
+
+  max-width:700px;
+
+  margin:90px auto;
+
+  text-align:center;
+
+  padding:45px;
+
+  border-radius:35px;
+
+  background:
+  linear-gradient(
+    180deg,
+    rgba(168,85,247,.12),
+    rgba(236,72,153,.08)
+  );
+
+}
+
+.garden-btn{
+
+  display:inline-block;
+
+  margin-top:20px;
+
+  text-decoration:none;
+
+  color:white;
+
+  padding:18px 35px;
+
+  border-radius:999px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #a855f7,
+    #ec4899
+  );
+
+}
+
+/* Decorations */
+
+.floating-note{
+
+  position:absolute;
+
+  opacity:.25;
+
+}
+
+.note1{
+
+  left:100px;
+  top:180px;
+
+}
+
+.note2{
+
+  right:150px;
+  top:240px;
+
+}
+
+.note3{
+
+  left:150px;
+  bottom:220px;
+
+}
+
+.note4{
+
+  right:120px;
+  bottom:180px;
+
+}
+
+/* Back */
+
+.back-btn{
+
+  display:block;
+
+  width:max-content;
+
+  margin:50px auto 0;
+
+  color:#cbd5e1;
+
+  text-decoration:none;
+
+}
+.garden-btn{
+  transition:all .3s ease;
+}
+
+.garden-btn:hover{
+
+  transform:
+  translateY(-4px)
+  scale(1.05);
+
+  box-shadow:
+  0 0 25px rgba(
+    236,72,153,.6
+  );
+
+}
+.garden-btn{
+
+  transition:
+  all .3s ease;
+
+}
+
+.garden-btn:hover{
+
+  transform:
+  translateY(-5px)
+  scale(1.05);
+
+  box-shadow:
+  0 0 25px
+  rgba(
+    236,
+    72,
+    153,
+    .5
+  );
+
+}

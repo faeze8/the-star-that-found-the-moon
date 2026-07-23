@@ -1,0 +1,58 @@
+.realm-page{
+
+  width:100vw;
+  min-width: 100vh;
+  background:#05070b;
+  height:100vh;
+
+}
+
+canvas{
+
+  position:fixed !important;
+
+  inset:0;
+
+}
+
+.story-text{
+
+  position:fixed;
+
+  left:50%;
+  top:50%;
+
+  transform:
+  translate(-50%,-50%);
+
+  max-width:700px;
+
+  text-align:center;
+
+  color:white;
+
+  font-size:2rem;
+
+  line-height:1.8;
+
+  opacity:0;
+
+  transition:.8s;
+
+  pointer-events:none;
+
+  text-shadow:
+  0 0 20px rgba(
+    255,
+    255,
+    255,
+    .4
+  );
+
+}
+
+.story-text.show{
+
+  opacity:1;
+
+}

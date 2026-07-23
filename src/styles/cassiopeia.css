@@ -1,0 +1,285 @@
+.cass-page{
+
+  min-height:100vh;
+
+  padding:80px 25px;
+
+  color:white;
+
+  overflow:hidden;
+
+  position:relative;
+
+  background:
+  radial-gradient(
+    circle at center,
+    #2a153d,
+    #12081f,
+    #030305
+  );
+
+}
+
+/* Hero */
+
+.cass-hero{
+
+  text-align:center;
+
+}
+
+.queen-icon{
+
+  font-size:3rem;
+
+}
+
+.cass-hero h1{
+
+  font-size:6rem;
+
+  margin:15px 0;
+
+  color:#fde68a;
+
+  text-shadow:
+  0 0 20px #fbbf24,
+  0 0 60px #f59e0b;
+
+}
+
+.cass-hero h2{
+
+  color:#f9a8d4;
+
+}
+
+/* Legend */
+
+.royal-card{
+
+  max-width:800px;
+
+  margin:60px auto;
+
+  padding:35px;
+
+  border-radius:30px;
+
+  background:
+  rgba(255,255,255,.05);
+
+  backdrop-filter:blur(10px);
+
+}
+
+.royal-card h3{
+
+  color:#fde68a;
+
+}
+
+/* Throne */
+
+.throne{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:30px;
+
+  font-size:2.5rem;
+
+  margin:70px 0;
+
+}
+
+/* Jewels */
+
+.royal-stars{
+
+  max-width:1000px;
+
+  margin:auto;
+
+}
+
+.royal-stars h3{
+
+  text-align:center;
+
+  margin-bottom:30px;
+
+}
+
+.jewel-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(220px,1fr));
+
+  gap:25px;
+
+}
+
+.jewel-card{
+
+  text-align:center;
+
+  padding:30px;
+
+  border-radius:25px;
+
+  background:
+  rgba(255,255,255,.04);
+
+  transition:.3s;
+
+}
+
+.jewel-card:hover{
+
+  transform:
+  translateY(-10px);
+
+  box-shadow:
+  0 0 30px rgba(
+    251,191,36,.35
+  );
+
+}
+
+.jewel-symbol{
+
+  font-size:2rem;
+
+}
+
+/* Palace */
+
+.palace-box{
+
+  max-width:700px;
+
+  margin:90px auto;
+
+  text-align:center;
+
+  padding:45px;
+
+  border-radius:35px;
+
+  background:
+  linear-gradient(
+    180deg,
+    rgba(251,191,36,.1),
+    rgba(236,72,153,.08)
+  );
+
+}
+
+.palace-btn{
+
+  display:inline-block;
+
+  margin-top:20px;
+
+  text-decoration:none;
+
+  color:white;
+
+  padding:18px 35px;
+
+  border-radius:999px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #f59e0b,
+    #ec4899
+  );
+
+}
+
+/* Floating */
+
+.crown{
+
+  position:absolute;
+
+  opacity:.25;
+
+}
+
+.crown1{
+
+  left:120px;
+  top:180px;
+
+}
+
+.crown2{
+
+  right:150px;
+  top:250px;
+
+}
+
+.crown3{
+
+  right:120px;
+  bottom:220px;
+
+}
+
+.back-btn{
+
+  display:block;
+
+  width:max-content;
+
+  margin:50px auto 0;
+
+  color:#cbd5e1;
+
+  text-decoration:none;
+
+}
+.palace-btn{
+  border:none;
+  cursor:pointer;
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    background .35s ease;
+}
+
+.palace-btn:hover{
+  transform:translateY(-4px);
+
+  box-shadow:
+    0 0 25px rgba(168,85,247,.45),
+    0 0 50px rgba(168,85,247,.2);
+}
+
+.fade-screen{
+  position:fixed;
+  inset:0;
+
+  background:black;
+
+  opacity:0;
+
+  pointer-events:none;
+
+  transition:opacity 1.2s ease;
+
+  z-index:9999;
+}
+
+.fade-screen.active{
+  opacity:1;
+}
